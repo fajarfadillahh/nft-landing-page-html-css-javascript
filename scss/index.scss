@@ -402,3 +402,63 @@ img {
     }
   }
 }
+
+// width 1024px
+@media screen and (min-width: 1024px) {
+  .home {
+    &__title {
+      margin-bottom: $margin-1;
+    }
+
+    &__text {
+      margin-bottom: $margin-3;
+    }
+
+    &__images {
+      &-eth {
+        width: 200px;
+      }
+
+      &-orbe {
+        width: 500px;
+      }
+    }
+
+    &__wrapper {
+      top: 3rem;
+      right: 0;
+      row-gap: 2.5rem;
+    }
+
+    &__shape {
+      &-small,
+      &-big-1,
+      &-big-2 {
+        filter: blur(132px);
+      }
+
+      &-small {
+        width: 300px;
+        height: 300px;
+        top: -5rem;
+        left: -2rem;
+      }
+
+      &-big-1,
+      &-big-2 {
+        width: 400px;
+        height: 400px;
+      }
+
+      &-big-1 {
+        top: 10rem;
+        right: -3.5rem;
+      }
+
+      &-big-2 {
+        left: 14rem;
+        bottom: -10rem;
+      }
+    }
+  }
+}
