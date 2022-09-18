@@ -462,3 +462,9 @@ img {
     }
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: $second-color;
+  color: $text-color;
+}
