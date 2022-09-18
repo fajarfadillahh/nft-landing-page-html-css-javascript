@@ -103,7 +103,9 @@ img {
     color: $text-color;
 
     &:hover {
-      color: $first-color;
+      background: linear-gradient(90deg, $second-color, $first-color);
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
 
