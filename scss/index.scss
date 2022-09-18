@@ -1,0 +1,79 @@
+// ===== FONT GOOGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap");
+
+// ===== VARIABLES SCSS CLASS =====
+// header height
+$header-height: 6rem;
+
+// color palette
+$first-color: hsl(203, 71%, 60%);
+$second-color: hsl(277, 56%, 68%);
+$text-color: hsl(203, 8%, 98%);
+$text-color-light: hsl(203, 8%, 80%);
+$body-color: hsl(259, 20%, 18%);
+
+// font body & font size
+$font-body: "Oxanium", cursive;
+$biggest-font-size: 2.25rem;
+$h2-font-size: 1.25rem;
+$normal-font-size: 0.938rem;
+$smaller-font-size: 0.75rem;
+
+// font weight
+$font-reguler: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+// margin
+$margin-0-5: 0.5rem;
+$margin-1: 1rem;
+$margin-1-5: 1.5rem;
+$margin-2: 2rem;
+$margin-2-5: 2.5rem;
+$margin-3: 3rem;
+$margin-3-5: 3.5rem;
+$margin-4: 4rem;
+
+// z-index
+$z-fixed: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// transition
+$transition-400: 0.4s;
+
+// ===== BASE & RESET =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+  color: $text-color;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS CLASS =====
+.container {
+  max-width: 1024px;
+  margin-inline: $margin-1-5;
+}
+
+.main {
+  overflow: hidden;
+}
