@@ -80,7 +80,14 @@ img {
   top: 0;
   left: 0;
   background-color: transparent;
+  transition: $transition-400;
   z-index: $z-fixed;
+
+  // sticky header
+  &.sticky-action {
+    background-color: $body-color;
+    box-shadow: 0 4px 8px hsla(203, 71%, 4%, 0.2);
+  }
 
   &__container {
     position: relative;
@@ -108,7 +115,7 @@ img {
       left: 0;
       padding: 4rem 0 3.5rem;
       background-color: $body-color;
-      box-shadow: 0 3px 8px hsla(203, 71%, 4%, 0.2);
+      box-shadow: 0 4px 8px hsla(203, 71%, 4%, 0.2);
       transition: $transition-400;
       overflow: hidden;
     }
